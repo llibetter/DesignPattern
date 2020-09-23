@@ -11,8 +11,8 @@ namespace 观察者
             cs.add(new ConcreteObserver("小李"));
             cs.add(new ConcreteObserver("小红"));
             cs.add(new ConcreteObserver("小张"));
-            //小王通知大家，今天挣了一百块，给大家买糖吃
-            cs.notify($"今天挣了一百块");
+            //小王通知大家，今天挣了一百块，请大伙来吃饭
+            cs.notify($"今天挣了一百块，大家来吃饭");
             Console.Read();
         }
     }
@@ -71,7 +71,7 @@ namespace 观察者
 
         public void Update(string str)
         {
-            Console.WriteLine($"{Name}知道了，今天{str}");
+            Console.WriteLine($"{Name}收到通知：{str}");
         }
     }
 }
