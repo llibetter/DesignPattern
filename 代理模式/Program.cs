@@ -8,7 +8,7 @@ namespace 代理模式
         {
             Proxy proxy=new Proxy();
             proxy.Request();
-            Console.Read();//
+            Console.Read();//////
         }
     }
 
