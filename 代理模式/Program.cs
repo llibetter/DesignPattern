@@ -24,7 +24,7 @@ namespace 代理模式
             Console.WriteLine("我是真实主题，我正在提供服务");
         }
     }
-    //代理类11222
+    //代理类11222333
     class Proxy : Subject
     {
         private ConcreteSubject realSubject;
