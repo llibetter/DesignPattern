@@ -1,0 +1,13 @@
+D:\study\DesignPattern\工厂方法\bin\Debug\netcoreapp3.1\工厂方法.exe
+D:\study\DesignPattern\工厂方法\bin\Debug\netcoreapp3.1\工厂方法.deps.json
+D:\study\DesignPattern\工厂方法\bin\Debug\netcoreapp3.1\工厂方法.runtimeconfig.json
+D:\study\DesignPattern\工厂方法\bin\Debug\netcoreapp3.1\工厂方法.runtimeconfig.dev.json
+D:\study\DesignPattern\工厂方法\bin\Debug\netcoreapp3.1\工厂方法.dll
+D:\study\DesignPattern\工厂方法\bin\Debug\netcoreapp3.1\工厂方法.pdb
+D:\study\DesignPattern\工厂方法\obj\Debug\netcoreapp3.1\工厂方法.csprojAssemblyReference.cache
+D:\study\DesignPattern\工厂方法\obj\Debug\netcoreapp3.1\工厂方法.AssemblyInfoInputs.cache
+D:\study\DesignPattern\工厂方法\obj\Debug\netcoreapp3.1\工厂方法.AssemblyInfo.cs
+D:\study\DesignPattern\工厂方法\obj\Debug\netcoreapp3.1\工厂方法.csproj.CoreCompileInputs.cache
+D:\study\DesignPattern\工厂方法\obj\Debug\netcoreapp3.1\工厂方法.dll
+D:\study\DesignPattern\工厂方法\obj\Debug\netcoreapp3.1\工厂方法.pdb
+D:\study\DesignPattern\工厂方法\obj\Debug\netcoreapp3.1\工厂方法.genruntimeconfig.cache
