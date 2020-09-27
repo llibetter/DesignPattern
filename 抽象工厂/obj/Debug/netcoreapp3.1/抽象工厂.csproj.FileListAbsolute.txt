@@ -1,0 +1,13 @@
+D:\study\DesignPattern\抽象工厂\bin\Debug\netcoreapp3.1\抽象工厂.exe
+D:\study\DesignPattern\抽象工厂\bin\Debug\netcoreapp3.1\抽象工厂.deps.json
+D:\study\DesignPattern\抽象工厂\bin\Debug\netcoreapp3.1\抽象工厂.runtimeconfig.json
+D:\study\DesignPattern\抽象工厂\bin\Debug\netcoreapp3.1\抽象工厂.runtimeconfig.dev.json
+D:\study\DesignPattern\抽象工厂\bin\Debug\netcoreapp3.1\抽象工厂.dll
+D:\study\DesignPattern\抽象工厂\bin\Debug\netcoreapp3.1\抽象工厂.pdb
+D:\study\DesignPattern\抽象工厂\obj\Debug\netcoreapp3.1\抽象工厂.csprojAssemblyReference.cache
+D:\study\DesignPattern\抽象工厂\obj\Debug\netcoreapp3.1\抽象工厂.AssemblyInfoInputs.cache
+D:\study\DesignPattern\抽象工厂\obj\Debug\netcoreapp3.1\抽象工厂.AssemblyInfo.cs
+D:\study\DesignPattern\抽象工厂\obj\Debug\netcoreapp3.1\抽象工厂.csproj.CoreCompileInputs.cache
+D:\study\DesignPattern\抽象工厂\obj\Debug\netcoreapp3.1\抽象工厂.dll
+D:\study\DesignPattern\抽象工厂\obj\Debug\netcoreapp3.1\抽象工厂.pdb
+D:\study\DesignPattern\抽象工厂\obj\Debug\netcoreapp3.1\抽象工厂.genruntimeconfig.cache
