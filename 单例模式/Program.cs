@@ -69,13 +69,13 @@ namespace 单例模式
 
         static Singleton3()
         {
-            _SingletonSecond = new Singleton3();
+            _instance = new Singleton3();
 
         }
-        private static Singleton3 _SingletonSecond = null;
+        private static Singleton3 _instance = null;
         public static Singleton3 getInstance()
         {
-            return _SingletonSecond;
+            return _instance;
         }
     }
 
