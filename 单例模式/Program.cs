@@ -6,10 +6,12 @@ namespace 单例模式
     {
         static void Main(string[] args)
         {
-            for(int i=0;i<1000;i++)
+            for (int i = 0; i < 10000; i++)
             {
-                new Thread(()=>{LazySingleton.getInstance();}).Start();
-                new Thread(()=>{HungrySingleton.getInstance();}).Start();
+                new Thread(() => { Singleton1.getInstance(); }).Start();
+                new Thread(() => { Singleton2.getInstance(); }).Start();
+                new Thread(() => { Singleton3.getInstance(); }).Start();
+                new Thread(() => { Singleton4.getInstance(); }).Start();
             }
 
             Console.Read();
@@ -17,39 +19,81 @@ namespace 单例模式
     }
 
     //懒汉式单例，在调用getInstance函数时再实例化
-    public class LazySingleton
+    public class Singleton1
     {
-        private static volatile LazySingleton instance = null;
-        private static object Singleton_Lock = new object();
+        private static volatile Singleton1 instance = null;
+        private static readonly object obj = new object();
         //private 避免类在外部被实例化
-        private LazySingleton() {
-            Console.WriteLine("创建了一个懒汉式单例");
-        }    
-        public static LazySingleton getInstance()
+        private Singleton1()
+        {
+            Console.WriteLine("创建了一个Singleton1");
+        }
+        public static Singleton1 getInstance()
         {
             //双重if+lock，第一个if是为了避免每次都加锁，提升效率
             //第二个if是为了多线程安全
             if (instance == null)
             {
-                lock (Singleton_Lock)
+                lock (obj)
                 {
                     if (instance == null)
-                        instance = new LazySingleton();
+                        instance = new Singleton1();
                 }
             }
             return instance;
         }
     }
-    //饿汉式单例，类加载时就已经初始化实例
-    public class HungrySingleton
+
+
+    //饿汉式单例，类加载时就已经初始化实例，静态字段直接new
+    public class Singleton2
     {
-        private static volatile HungrySingleton instance = new HungrySingleton();
-        private HungrySingleton() {
-            Console.WriteLine("创建了一个饿汉式单例");
+        private static volatile Singleton2 instance = new Singleton2();
+        private Singleton2()
+        {
+            Console.WriteLine("创建了一个Singleton2");
         }
-        public static HungrySingleton getInstance()
+        public static Singleton2 getInstance()
         {
             return instance;
+        }
+    }
+
+    //静态构造函数
+    public class Singleton3
+    {
+        private Singleton3()
+        {
+            Console.WriteLine("创建了一个Singleton3");
+        }
+
+        static Singleton3()
+        {
+            _SingletonSecond = new Singleton3();
+
+        }
+        private static Singleton3 _SingletonSecond = null;
+        public static Singleton3 getInstance()
+        {
+            return _SingletonSecond;
+        }
+    }
+
+    //利用Lazy按需加载
+    public sealed class Singleton4
+    {
+        private Singleton4()
+        {
+            Console.WriteLine("创建了一个Singleton4");
+        }
+        private static readonly Lazy<Singleton4> lazy =
+            new Lazy<Singleton4>(() =>{ return new Singleton4();});
+
+        //public static Singleton4 Instance { get { return lazy.Value; } }
+
+        public static Singleton4 getInstance()
+        {
+            return lazy.Value;
         }
     }
 }
